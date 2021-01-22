@@ -1,0 +1,18 @@
+table, th, td {
+    border: 1px solid black;
+    width: 150px;
+
+  }
+
+th {
+    font-size: larger;
+}
+
+table {
+    counter-reset: rowNumber;
+  }
+  
+table td::before {
+    counter-increment: rowNumber;
+    content: counter(rowNumber) ".";
+}

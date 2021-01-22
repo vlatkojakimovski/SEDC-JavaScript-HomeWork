@@ -146,6 +146,5 @@ function transform(arr) {
   }
   return arr;
 }
-
 // console.log(transform([1, 2, 3, 4, 5]));
 // console.log(transform([2, 2, 0, 8, 10]));
