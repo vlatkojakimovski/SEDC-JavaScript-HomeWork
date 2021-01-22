@@ -1,0 +1,6 @@
+table, th, td, tr {
+    border: 1px solid black;
+    width: 90vw;
+    margin: auto;
+    font-size: small;
+  }

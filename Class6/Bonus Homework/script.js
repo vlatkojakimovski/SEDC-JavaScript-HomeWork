@@ -22,7 +22,7 @@ function setIngredient() {
   }
 }
 function createTable(rName, rIngredient) {
-  table.innerHTML += `<table> 
+  table.innerHTML += ` 
         <tr>
             <th> ${recipeName} </th>
         </tr>`;
