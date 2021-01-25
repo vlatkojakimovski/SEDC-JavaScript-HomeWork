@@ -1,6 +1,6 @@
 
 function createTable(row, column) {
-  if (!isNaN(row) && !isNaN(column)) {
+  if (!isNaN(row) && !isNaN(column) && row>0 && column>0) {
     document.body.innerHTML += `<table id="table">`;
     let table = document.getElementById("table");
 
