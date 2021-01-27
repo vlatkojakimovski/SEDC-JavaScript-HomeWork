@@ -1,22 +1,28 @@
-let name = document.getElementById("name");
+let nameAnimal = document.getElementById("name");
 let kind = document.getElementById("kind");
 let submitBtn = document.getElementById("submitBtn");
+let animalList = document.getElementById("animalList");
 
-function Animal(name, kind, speak) {
-    this.name = name;
+function Animal(nameAnimal, kind, speak) {
+    this.nameAnimal = nameAnimal;
     this.kind = kind;
     this.speak = function () {
-        console.log(`${this.kind} says: Hey bro!!!`);
         return `${this.kind} says: Hey bro!!!`;
     };
 }
 
 submitBtn.addEventListener("click", function () {
-    if (name.value !== "" && kind.value !== "") {
-        let animal1 = new Animal(name.value, kind.value);
-        console.log(animal1.kind);
-        document.body.innerHTML += `<p>${animal1.speak()}</p>`;
+    if (nameAnimal.value !== "" && kind.value !== "") {
+        let animal1 = new Animal(nameAnimal.value, kind.value);
+        animalList.innerHTML +=  `<li>${animal1.speak()}</li>`
     } else {
         alert("Please fill the fields Animal name and Animal kind !!!");
     }
+    clear();
 });
+
+
+function clear() {
+    nameAnimal.value = '';
+    kind.value = '';
+}
