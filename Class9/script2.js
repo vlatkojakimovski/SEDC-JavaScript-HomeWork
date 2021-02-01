@@ -23,7 +23,7 @@ function clear() {
 }
 
 function isColor(strColor) {
-    var s = new Option().style;
+    let s = new Option().style;
     s.color = strColor;
-    return s.color == strColor;
+    return s.color === strColor;
 }

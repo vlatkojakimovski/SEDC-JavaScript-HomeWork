@@ -1,0 +1,22 @@
+h3 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+ul h2 {
+    display: inline-block;
+}
+
+#wrapper {
+    margin: auto;
+    max-width: 90%;
+    height: 100%;
+    background-color: rgba(245, 245, 220, 0.556);
+    padding: 10px 50px;
+}
+
+#countryColor {
+    color: darkblue;
+    font-size: 2rem;
+}
