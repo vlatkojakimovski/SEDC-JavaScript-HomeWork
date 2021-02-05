@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="form">
+            <form action="#" id="register-form" class="register-form">
+                <label for="userName">Enter your User Name</label>
+                <input type="text" id="userName" placeholder="User Name" required><br>
+                <label for="userPass">Enter your password</label>
+                <input type="password" id="userPass" placeholder="Password" required><br>
+                <button id="btnRegister">Register User</button>
+                <p class="message"> Already registered <a href="#"> Login</a></p>
+                <br><br>
+            </form>
+
+            <form id="login-form">
+                <label for="loginUser">User Name</label>
+                <input type="text" id="loginUser"><br>
+                <label for="loginPass">Password</label>
+                <input type="password" id="loginPass"><br>
+                <button id="btnLogIn">Log In</button>
+                <p class="message"> Not Registered ? <a href="#"> Register</a></p>
+            </form>
+        </div>
+       
+    </div>
+
+    <div id="listUsersWrapper">
+        <ul id="listUsers">
+        </ul>
+    </div>
+
+    <form class="edit form" id="editForm">
+        <label for="userEdit">Edit your User Name</label>
+        <input type="text" id="userEdit" required ><br>
+        <label for="passEdit">Edit your password</label>
+        <input type="password" id="passEdit" required><br>
+        <button id="btnSave">SAVE</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
